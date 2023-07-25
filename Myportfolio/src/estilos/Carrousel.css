@@ -1,0 +1,70 @@
+.card{
+    border: none;
+    border-radius: 40px;
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+.card div{
+    background-color: black;
+    color: #277ffe;
+    border-radius: 40px;
+}
+
+.card div p{
+    color: white;
+}
+
+.card div p a{
+    text-decoration: none;
+}
+
+.card img{
+    height: 17rem;
+}
+
+.Create-Div::before{
+  content: '';
+  display: block;
+  height: 17rem;
+  width: 27rem;
+  background-color: white;
+}
+
+.Create-Div-Tecnologies ::before{
+  content: '';
+  display: block;
+  height: 80px;
+  width: 27rem;
+  background-color: white;
+}
+
+
+.button-Arrow{
+    background-color:transparent;
+    border: none;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 white;
+      }
+      50% {
+        box-shadow: 0 0 10px white;
+      }
+      100% {
+        box-shadow: 0 0 0 white;
+      }
+  }
+  
+  .replite-glow{
+    animation: glow 1.5s infinite;
+  }
+  .hover:hover{
+    cursor: pointer;
+  }
+  
+
+  
+  .card:hover {
+    transform: scale(1.1); /* Escala el elemento al 120% de su tamaño original al pasar el cursor por encima */
+  }

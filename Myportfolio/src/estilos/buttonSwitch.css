@@ -1,0 +1,40 @@
+.coment{
+    margin-inline-end: 15px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 3vh;
+    
+}
+input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+#buttonSwitch {
+    display: block;
+    width: 10vh;
+    height: 4vh;
+    background-color: #1e65ff;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    margin-block-end: 40px;
+    transition: 0.5s;
+}
+
+#buttonSwitch::after {
+    content: "";
+    width: 4vh;
+    height: 4vh;
+    background-color: black;
+    position: absolute;
+    border-radius: 70px;
+    left: 5px;
+    transition: 0.5s;
+}
+
+input:checked + #buttonSwitch:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}

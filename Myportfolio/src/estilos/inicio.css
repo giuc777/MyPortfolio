@@ -1,0 +1,82 @@
+:root{
+  --black_found: rgba(0, 0, 0, 0.8);
+}
+
+.texto-degradado {
+    background: linear-gradient(to bottom, rgba(4, 74, 255, 1) 0%,rgba(228, 146, 205, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title{
+    font-family: 'Sriracha', cursive;    
+  }
+
+  .text_Montserrat{
+    font-family: Montserrat;
+  }
+
+  .subtitle_header{
+    background-color: var(--black_found);
+    color: #277ffe;
+  }
+
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .blinking-letter {
+    animation: blink 1s infinite;
+  }
+
+.card .logo_style_without_hover{ 
+  height: 100px;
+  width: 100px;
+}
+
+.Text_color_Flamingo{
+  color: #fe4d37;
+}
+.boxRotate {
+  animation: rotate 0.30s linear;
+}
+
+.project{
+  background-color: #212121;
+  height: auto;
+  padding-block-end: 20px;
+}
+
+.text-carousel{
+  font-size: 5vh;
+
+}
+.lettreIsMobie{
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.NotMove{
+  position: sticky;
+  bottom: 0; /* La sección se mantendrá pegada en la parte superior de su contenedor */
+  /* Alternativamente, si quieres que se mantenga al final, puedes usar:
+  bottom: 0; */
+}
+
+.NotSee{
+  display: none;
+}
