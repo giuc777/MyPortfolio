@@ -70,7 +70,7 @@ const Header = ()=>{
     
     
     return(
-        <div className="bg-image header" style={{backgroundImage: 'url(./background-header.jpg)', height: '100vh', backgroundSize: 'cover'}}>
+        <div className="bg-image header" style={{backgroundImage: 'url(./background-header.webp)', height: '100vh', backgroundSize: 'cover'}}>
           <nav className="navbar navbar-expand-lg bg-black navbar-dark">
             <div className="container-fluid justify-content-center">
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
